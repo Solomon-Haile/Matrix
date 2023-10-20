@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    margin-top: 10px;
+    
+}
+
+header h1 {
+    padding: 15px 0;
+}
+
+header ul {
+    padding: 0 0 10px 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-1 div {
+   margin: 150px 15px 35px 0;
+}
+
+.flex-1 #card-1 {
+    margin-top: 155px ;
+} 
+
+.flex .flex-1 h2 {
+    margin: 15px 15px 15px 0;
+}
+
+.flex-1 div a {
+    margin-right: 45px;
+}
+
+.flex-1 div input[type="text"] {
+    margin: 15px 15px 15px 0;
+}
+
+#card-1 img {
+    width: 50%;
+}
+
+.flex .flex-1 {
+    width: max-content;
+}
+
+.flex-2 img {
+    width: 90%;
+    margin: 15px 15px 15px 0;
+}
+
+.flex-2 img#page {
+    margin-top: 60px;
+}
+
+.flex-2 #flex-x {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.flex-2 #page {
+    width: 100px;
+}
+
+#flex-x div#x-2 {
+    margin-left: 30px;
+}
+
+.flex .flex-3 div {
+    margin: 10px 0;
+}
+
+.flex .flex-3 div img#paris {
+    width: 275px;
+    height: 150px;
+}
+
+ h4 {
+    color: rgb(209, 17, 49);
+}
+
+footer .foot-cont {
+    display: flex;
+}
+
+footer .foot-cont #tv {
+    width: 100%;
+    height: 50px;
+}
+
+footer .foot-cont #foot {
+    margin-left: 100px;
+}
+
+footer ul #NY {
+    margin-left: 10px;
+}
+
+/* footer #copy {
+    margin: 0;
+} */
+
+footer ul {
+    margin: 20px 35px;
+}

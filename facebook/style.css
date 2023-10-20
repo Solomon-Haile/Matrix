@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+/* header section style */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px 0;
+}
+
+.header .login {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+.header #logo-img {
+    padding: 10px;
+}
+
+.header p {
+    color: #fff;
+}
+
+.login button {
+   background-color: #3b5998;
+   color: #fff;
+}
+
+/* main section style */
+.main {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-1 p {
+    color: #3b5998;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.col-1 #people-img {
+    margin-top: 15px;
+}
+
+.col-2 .flex {
+    display: flex;
+    padding: 3px;
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 70px;
+}
+
+.sign-top h2,h3,.h2,.h3 {
+    text-align: left;
+    color: #3b5998;
+}
+
+.sign-top hr {
+    margin: 5px 0;
+    width: 76%;
+}
+
+.col-2-flex-container .flex p {
+    color: #3b5998;
+}
+
+.col-2-flex-container .flex input {
+    padding: 3px;
+}
+
+.col-2 a {
+    text-decoration: none;
+}
+
+.col-2-flex-container #click {
+    padding: 10px 0;
+}
+
+#green-btn {
+    background-color: green;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 9px 0;
+}
+
+#click a {
+    color: cornflowerblue;
+}
+
+.sign-bottom p {
+    padding: 10px 0;
+}
+
+.sign-bottom hr {
+    width: 76%;
+}
+
+.sign-bottom a {
+    font-weight: bold;
+}
+
+/* Footer style */
+
+#foot-lang {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+#foot-lang a {
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+    color: #3b5998;
+}
+
+#foot-lang #dot-link {
+    background-color: whitesmoke;
+    padding: 2px 6px;
+}
+
+#foot-lang hr {
+    width: 76%;
+    margin: 5px 0;
+}
+
+.footer #copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: #3b5998;
+}
+/* White space after footer section */
+body::after {
+    content: '';
+    display: block;
+    height: 80px;
+}

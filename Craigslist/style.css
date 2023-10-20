@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header #h1 {
+    background-color: darkgray;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-1 {
+    background-color: silver;
+}
+
+.container .flex-1-a {
+    display: flex;
+}
+
+.flex-1 .flex-1-a .flex-1-a-1 {
+    padding: 10px;
+}
+
+.flex-1 .flex-1-a .flex-1-a-1 p {
+    padding-top: 5px;
+    font-weight: bold;
+    background-color: whitesmoke;
+    margin: 4px 0;
+}
+
+.flex-1 #search {
+    padding: 5px;
+    background-color: darkgrey;
+}
+
+.flex-1 #search p {
+    background-color: whitesmoke;
+}
+
+.flex-1 #search button {
+    padding: 2px 9px;
+}
+
+.last p {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.top a {
+    display: block;
+    border-bottom: 1px solid silver;
+    padding: 2px 0;
+}
+
+.top {
+    background-color: white;
+}
+
+.top .head {
+    background-color: darkgray;
+    font-weight: bold;
+}
+
+.middle {
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+
+.middle p {
+    font-weight: bold;
+    background-color: darkgray;
+}
+
+.middle a {
+    display: block;
+    border-bottom: 1px solid silver;
+    padding: 2px 0;
+}
+
+.flex-2 .bottom {
+    background-color: whitesmoke;
+    margin: 20px 0;
+}
+
+#bottom-1 {
+    font-weight: bold;
+    margin-top: 20px;
+}
