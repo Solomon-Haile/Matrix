@@ -19,6 +19,7 @@ header {
     width: 600px;
     margin: auto;
     padding: 40px 30px;
+    overflow: auto;
 }
 
 #my-form {
@@ -62,4 +63,16 @@ header {
     background: #f4f4f4;
     margin: 5px 0;
     text-align: center;
+  }
+
+  .bg-dark {
+    background: #333;
+    color: #fff;
+  }
+  
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
   }

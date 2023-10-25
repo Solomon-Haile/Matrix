@@ -14,13 +14,13 @@ const name = 'Brad';
 const age = 37;
 const rating = 3.5;
 const isCool = true;
-const x = null;
+const t = null;
 const y = undefined;
-let z; // undefined
+let m; // undefined
 
 // check the type of data of a variable
 
-console.log(typeof z)
+console.log(typeof m)
 
 // Concatenation
 console.log('My name is ' + name + ' and I am ' + age);
@@ -67,7 +67,7 @@ console.log(Array.isArray(fruits));
 console.log(fruits.indexOf('oranges'));
 
 // OBJECT LITERALS
-const person = {
+const personObject = {
     firstName: 'John',
     age: 30,
     hobbies: ['music', 'movies', 'sports'],
@@ -79,16 +79,16 @@ const person = {
   }
   
   // Get single value
-  console.log(person.name)
+  console.log(personObject.firstName)
   
   // Get array value
-  console.log(person.hobbies[1]);
+  console.log(personObject.hobbies[1]);
   
   // Get embedded object
-  console.log(person.address.city);
+  console.log(personObject.address.city);
   
   // Add property
-  person.email = 'jdoe@gmail.com';
+  personObject.email = 'jdoe@gmail.com';
 
   // Array of objects
 const todos = [
@@ -164,7 +164,7 @@ todos.forEach(function(todo, i, myTodos) {
   // CONDITIONALS
 
 // Simple If/Else Statement
-const x = 30;
+let x = 30;
 
 if(x === 10) {
   console.log('x is 10');
@@ -202,14 +202,14 @@ function greet(greeting = 'Hello', name) {
   
   
   // ARROW FUNCTIONS
-  const greet = (greeting = 'Hello', name = 'There') => `${greeting} ${name}`;
-  console.log(greet('Hi'));
+  const greetNew = (greeting = 'Hello', name = 'There') => `${greeting} ${name}`;
+  console.log(greetNew('Hi'));
   
   
   // OOP
   
   // Constructor Function
-  function Person(firstName, lastName, dob) {
+  function Personx(firstName, lastName, dob) {
     // Set object properties
     this.firstName = firstName;
     this.lastName = lastName;
@@ -223,19 +223,19 @@ function greet(greeting = 'Hello', name) {
   }
   
   // Get Birth Year
-  Person.prototype.getBirthYear = function () {
+  Personx.prototype.getBirthYear = function () {
     return this.dob.getFullYear();
   }
   
   // Get Full Name
-  Person.prototype.getFullName = function() {
+  Personx.prototype.getFullName = function() {
     return `${this.firstName} ${this.lastName}`
   }
   
   
   // Instantiate an object from the class
-  const person1 = new Person('John', 'Doe', '7-8-80');
-  const person2 = new Person('Steve', 'Smith', '8-2-90');
+  const person1 = new Personx('John', 'Doe', '7-8-80');
+  const person2 = new Personx('Steve', 'Smith', '8-2-90');
   
   console.log(person2);
   
@@ -245,8 +245,8 @@ function greet(greeting = 'Hello', name) {
   
   
   // Built in constructors
-  const name = new String('Kevin');
-  console.log(typeof name); // Shows 'Object'
+  const nameOne = new String('Kevin');
+  console.log(typeof nameOne); // Shows 'Object'
   const num = new Number(5);
   console.log(typeof num); // Shows 'Object'
   
@@ -270,8 +270,8 @@ function greet(greeting = 'Hello', name) {
     }
   }
   
-  const person1 = new Person('John', 'Doe', '7-8-80');
-  console.log(person1.getBirthYear());
+  const person12 = new Person('John', 'Doe', '7-8-80');
+  console.log(person12.getBirthYear());
   
   
   // ELEMENT SELECTORS
@@ -289,7 +289,7 @@ function greet(greeting = 'Hello', name) {
   
   
   // MANIPULATING THE DOM
-  const ul = document.querySelector('.items');
+  const ul = document.querySelector('#users');
   // ul.remove();
   // ul.lastElementChild.remove();
   ul.firstElementChild.textContent = 'Hello';
@@ -312,10 +312,10 @@ function greet(greeting = 'Hello', name) {
   });
   
   // Keyboard Event
-  const nameInput = document.querySelector('#name');
+  /*const nameInput = document.querySelector('#name');
   nameInput.addEventListener('input', e => {
     document.querySelector('.container').append(nameInput.value);
-  });
+  });*/
   
   
   // USER FORM SCRIPT
@@ -328,7 +328,7 @@ function greet(greeting = 'Hello', name) {
   const userList = document.querySelector('#users');
   
   // Listen for form submit
-  myForm.addEventListener('submit', onSubmit);
+  myForm.addEventListener('click', onSubmit);
   
   function onSubmit(e) {
     e.preventDefault();
@@ -348,13 +348,13 @@ function greet(greeting = 'Hello', name) {
       li.appendChild(document.createTextNode(`${nameInput.value}: ${emailInput.value}`));
   
       // Add HTML
-      // li.innerHTML = `<strong>${nameInput.value}</strong>e: ${emailInput.value}`;
+     // li.innerHTML = `<strong>${nameInput.value}</strong>e: ${emailInput.value}`;
   
       // Append to ul
       userList.appendChild(li);
   
       // Clear fields
-      nameInput.value = '';
-      emailInput.value = '';
+      // nameInput.value = '';
+      // emailInput.value = '';
     }
-  }
+  };
