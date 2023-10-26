@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>My Personal Website</title>
+</head>
+<body>
+    <div class="container ms-5 p-4">
+       <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- First Heading -->
+        <h2 class="text-center">Please fill the form</h2>
+
+        <!-- Main Body -->
+        
+        <!-- Table -->
+
+        <div class="row">
+            <div class="col-md">
+                <h3 class="text-center">List of Students</h3>
+                <table class="table table-striped w-50 text-center">
+                    <thead>
+                        <tr>
+                            <th>Enrollment</th>
+                            <th>First Name</th>    
+                            <th>Last Name</th>
+                            <th>Age</th>
+                            <th>Sex</th>
+                            <th>City</th>
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Online</td>
+                            <td>Jhon</td>
+                            <td>Doe</td>
+                            <td>34</td>
+                            <td>M</td>
+                            <td>Amsterdam</td>
+                        </tr>
+                        <tr>
+                            <td>Hybrid</td>
+                            <td>Jane</td>
+                            <td>Doe</td>
+                            <td>23</td>
+                            <td>F</td>
+                            <td>Den Haag</td>
+                        </tr>
+                        <tr>
+                            <td>Regular</td>
+                            <td>Lee</td>
+                            <td>Jin</td>
+                            <td>21</td>
+                            <td>M</td>
+                            <td>Haarlem</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md">
+                <!-- Form -->
+                <h3>You can get registered by filling the form below</h3>
+
+                <form>
+
+                    <label for="enroll">Please choose your enrollment type : </label><br>
+                    <select name="type" id="enroll">
+                        <option value="">Choose</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Online">Online</option>
+                        <option value="Hybrid">Hybrid</option>
+                    </select><br><br>
+
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Type your first name"><br><br>
+
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Type your last name"><br><br>
+
+                    <label for="age">What is your age ?</label><br>
+                    <input type="number" id="age" name="age"><br><br>
+
+                    <p>What is your sex ?</p>
+                    <input type="radio" id="sex1" value="male" name="sex">
+                    <label for="sex1">Male</label>
+                    <input type="radio" id="sex2" value="female" name="sex">
+                    <label for="sex2">Female</label><br>
+
+                    <br><p>Where do you live ?</p>
+                    <input type="checkbox" id="city1" name="checkbox" value="utrecht">
+                    <label for="city1">Utrecht</label><br>
+                    <input type="checkbox" id="city2" name="checkbox" value="amsterdam">
+                    <label for="city2">Amsterdam</label><br>
+                    <input type="checkbox" id="city3" name="checkbox" value="den haag">
+                    <label for="city3">Den Haag</label><br>
+                    <input type="checkbox" id="city4" name="checkbox" value="other city">
+                    <label for="city4">Other city</label><br><br>
+
+                    <div class="msg"></div>
+                    <hr>
+
+                    <button type="submit" class="btn pb-3 btn-lg bg-primary text-white">Submit</button>
+                    <hr>
+
+                    
+                </form>
+            </div>
+        </div>
+        
+
+        
+
+        <footer class="text-center p-5">
+            <p><b>Copyright &copy;</b> 2023 My Personal Website</p>
+        </footer>
+        <hr>
+
+    </div>
+    
+    <script src="js.js"></script>
+</body>
+</html>
