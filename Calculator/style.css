@@ -1,0 +1,71 @@
+/* style sheet for calculator app */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(209, 100%, 83%, 0.49);
+}
+
+.container {
+    background-color: #C1D8D3;
+    width: 350px;
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.display {
+    width: 100%;
+    font-size: 30px;
+    background-color: #fff;
+    height: 90px;
+    text-align: right;
+    border: none;
+    padding: 0 20px 0 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 5px;
+}
+
+button {
+    height: 60px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkslateblue;
+}
+
+.clear:hover {
+    background-color: darkred;
+}
+
+.equalSign {
+    width: 100%;
+    grid-column: 1 / span 4;
+}
+
+.equalSign:hover {
+    background-color: darkslateblue;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
